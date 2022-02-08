@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Just try to how it can be</h1>
+
+    <div>
+        <p>hello world</p>
+        <p>You are so interesting...</p>
+    </div>
+    
+</body>
+
+<script>
+    let div = document.createElement('div');
+    div.innerHTML = 'added a new element'
+    div.id="newid"
+    div.class="newclass"
+    div.style.backgroundColor="green"
+    document.body.appendChild(div)
+
+    const mesut = document.getElementById("newid")
+
+    mesut.innerHTML ="I succeded a new item with DOM"
+
+    console.log(mesut);
+
+    mesut.style.color = "orange"
+
+    div.classList.add("newclasslist")
+
+    const sem = document.getElementsByClassName("newclasslist")
+    sem.innerHTML = "added a new classlist"
+
+    console.log(sem);
+    console.log(div.classList.contains('newclasslist'));
+
+    
+
+</script>
+</html>
